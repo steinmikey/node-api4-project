@@ -9,7 +9,7 @@ server.use(cors());
 server.use(express.json());
 
 server.get("/", (req, res) => {
-  res.send("<h1>Home Page</h1>");
+  res.send("<h1>Home Page</h1><p>/users should work too</p>");
 });
 
 server.get("/api/users", (req, res) => {
