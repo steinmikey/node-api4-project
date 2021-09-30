@@ -8,6 +8,10 @@ const server = express();
 server.use(cors());
 server.use(express.json());
 
+server.get("/", (req, res) => {
+  res.send("<h1>Home Page</h1>");
+});
+
 server.get("/api/users", (req, res) => {
   res.json([
     { id: 1, name: "Michael" },
